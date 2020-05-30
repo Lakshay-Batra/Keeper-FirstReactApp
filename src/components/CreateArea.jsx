@@ -16,9 +16,9 @@ function CreateArea(props) {
 
   function addItem(event) {
     props.addItemProp(item);
-    // setItem(prevValue => {
-    //   return { ...prevValue, title: "", content: "" };
-    // });
+    setItem(prevValue => {
+      return { ...prevValue, title: "", content: "" };
+    });
     event.preventDefault();
   }
 
